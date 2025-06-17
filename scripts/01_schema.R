@@ -23,7 +23,8 @@ for (f in files) {
   df <- fread(path)
   
   # feather로 저장 (fast load + 구조 확인용)
-  feather::write_feather(df, file.path("data_preview", paste0(name, ".feather")))
+  feather::write_feather(df, file.path
+                         ("data_preview", paste0(name, ".feather")))
   
   # 콘솔 출력: 구조 요약
   cat("====", name, "====\n")

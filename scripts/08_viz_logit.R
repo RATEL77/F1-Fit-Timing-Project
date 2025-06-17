@@ -12,6 +12,10 @@ library(pROC)
 # 02. 모델 및 데이터 불러오기
 fit <- readRDS("models/logit_fit.rds")
 df <- readRDS("data_tidy/pitstop_cluster.rds")
+setDT(df)
+
+# 중요: 타겟 변수 정의 (delta_time < 15초 기준)
+df[, undercut_success := ifelse(delta_time < 15000, 1, 0)]
 
 # 03. 예측 확률 계산
 df$pred_prob <- predict(fit, type = "response")
@@ -35,8 +39,5 @@ ggplot(coef_df[-1, ], aes(x = term, y = estimate)) +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2) +
   labs(title = "Logistic Coefficients with 95% CI", x = "Variable", y = "Coefficient")
 
-# 06. 예측 결과 저장 (선택)
+# 06. 예측 결과 저장
 saveRDS(df, file = "data_tidy/pitstop_logit.rds")
-
-
-table(df$undercut_success, useNA = "ifany")

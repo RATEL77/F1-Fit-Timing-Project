@@ -26,7 +26,7 @@ coef_df <- data.frame(
 )
 coef_df$ci_lower <- coef_df$estimate - 1.96 * coef_df$se
 coef_df$ci_upper <- coef_df$estimate + 1.96 * coef_df$se
-
+ 
 ggplot(coef_df[-1, ], aes(x = term, y = estimate)) +  # Intercept 제외
   geom_bar(stat = "identity", fill = "steelblue") +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2) +

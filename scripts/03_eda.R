@@ -11,6 +11,7 @@ library(feather)
 
 # 02. 데이터 불러오기
 df <- feather::read_feather("data_tidy/pitstop.feather")
+setDT(df)  # data.table 형식으로 변환
 
 # 03. 기술통계 확인
 print(summary(df[, .(first_pit_lap, delta_time)]))

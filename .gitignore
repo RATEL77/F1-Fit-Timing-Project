@@ -4,6 +4,6 @@
 .DS_Store
 renv/library/
 database/
-data_raw/
 *.feather
 *.rds
+!data_tidy/pitstop_logit.rds
