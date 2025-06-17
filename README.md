@@ -1,6 +1,6 @@
-# 🏁 F1 Fit Timing — Pit-Stop Strategy Optimization
+# 🏁 F1 Pit Timing — Pit-Stop Strategy Optimization
 
-**F1 Fit Timing** is a data-driven study that pinpoints the *optimal first pit-stop lap* in Formula 1 races.  
+**F1 Pit Timing** is a data-driven study that pinpoints the *optimal first pit-stop lap* in Formula 1 races.  
 Using historical race telemetry (1950 – 2024), we cluster strategies, fit regression / classification models, and visualize the trade-off between timing, time-loss, and under-cut success.
 
 ---
@@ -65,9 +65,9 @@ MIT License – free to use, modify, and distribute.
 
 ## 📙 🇰🇷 한국어 설명
 
-### 🏁 F1 Fit Timing — Pit-Stop Strategy Optimization
+### 🏁 F1 Pit Timing — Pit-Stop Strategy Optimization
 
-**F1 Fit Timing**은 1950-2024년의 실제 F1 경기 텔레메트리 데이터를 활용해 **첫 피트 인 랩을 최적화**하는 데이터 분석 연구입니다.  
+**F1 Pit Timing**은 1950-2024년의 실제 F1 경기 텔레메트리 데이터를 활용해 **첫 피트 인 랩을 최적화**하는 데이터 분석 연구입니다.  
 전략을 군집화하고 회귀·분류 모델을 적용해 *피트 인 시점·손실 시간·언더컷 성공률* 간의 균형을 시각적으로 분석합니다.
 
 ### 🚀 프로젝트 개요
