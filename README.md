@@ -57,7 +57,7 @@ MIT License – free to use, modify, and distribute.
 ---
 
 ## 📙 🇰🇷 한국어 설명
-🏁 F1 Pit Timing — 피트 전략 최적화
+## 🏁 F1 Pit Timing — 피트 전략 최적화
 F1 Pit Timing은 1950-2024년 실제 F1 경기 데이터를 활용해 첫 피트 인 랩을 최적화하는 연구입니다.
 전략을 군집화하고 회귀·분류 모델을 적용해 피트 인 시점·손실 시간·언더컷 성공률의 균형을 시각적으로 분석합니다.
 
